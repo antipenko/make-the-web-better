@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         .shower {
             --slide-ratio: calc(16 / 9);
@@ -19,10 +20,8 @@
     </header>
 
     <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
         <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
+            <img class="cover" src="pictures/hero.jpg" alt="make the web better. Vlad Antypenko - beetrot academy">
             <figcaption class="copyright right white">
                 <a href="http://fiftyfootshadows.net/">© John Carey</a>
             </figcaption>
@@ -49,68 +48,73 @@
         </style>
     </section>
 
+    <!-- Agenda -->
     <section class="slide">
-        <h2>Shower key features</h2>
+        <h2>Что сегодня будет</h2>
         <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
+            <li>Проблема</li>
+            <li>Варианты решения</li>
+            <li>Разбор инструмента</li>
+            <li>Дополнительные фишки</li>
         </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
     </section>
 
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-    </section>
 
+    <!-- about me  -->
     <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+        <p>Еще раз</p>
+
+        <div class="flex title-wrapper">
+            <h2>Я Владик</h2>
+            <span>, люблю говорить про СSS</span>
         </div>
+        <ul>
+            <li>Пишу фронтед</li>
+            <li>Делаю митапы и конференции</li>
+            <li>Росту в глубь</li>
+            <li>Считаю что практика важнее, но при этом никогда не против упороться и перечитать кусок спецфикации</li>
+        </ul>
+
+        <style>
+
+        </style>
+
+    </section>
+
+    <!-- trouble  -->
+    <section class="slide">
+        <h2 class="shout shrink">Проблема</h2>
     </section>
 
     <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
-    </section>
-
-    <section class="slide">
-        <h2>Serious citations</h2>
         <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
+            <img class="cover" src="pictures/trouble-2.jpg" alt="make the web better. Vlad Antypenko - beetrot academy">
         </figure>
     </section>
 
     <section class="slide">
-        <h2>Code samples</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
-        </pre>
+        <h2>Современные разработчики положили 🔩 на то, что является результатом их работы</h2>
+        <ol>
+            <li class="next">SPA</li>
+            <li class="next">Preprocessor</li>
+            <li class="next">But it will work only once</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Впринципе хромает качество</h2>
+        <ol>
+            <li class="next">Новичок</li>
+            <li class="next">Нет ментора</li>
+            <li class="next">Наше любимое "ну оно же работает"</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink smaller">
+            <div class="smaller"> Для нас почему то</div>
+            <div>Качество != (Accessability & SEO )</div>
+        </h2>
     </section>
 
     <section class="slide">

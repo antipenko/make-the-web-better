@@ -1,0 +1,17 @@
+.flex{
+    display: flex;
+}
+
+.title-wrapper{
+    display: flex;
+    align-items: baseline;
+}
+
+.shout.smaller
+{
+    font-size: 2em;
+}
+
+.smaller{
+    font-size: .5em;
+}

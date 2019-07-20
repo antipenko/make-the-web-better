@@ -15,3 +15,7 @@
 .smaller{
     font-size: .5em;
 }
+
+.slide .title--white{
+    color: #fff;
+}

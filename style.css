@@ -23,3 +23,14 @@
 .cover--full{
     width: 100%;
 }
+.img{
+    max-width: 100%;
+}
+
+.img--small{
+    max-height: 70%;
+}
+
+.text-center{
+    text-align: center;
+}

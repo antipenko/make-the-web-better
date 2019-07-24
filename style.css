@@ -34,3 +34,10 @@
 .text-center{
     text-align: center;
 }
+
+.cover-right{
+    right: 0;
+    left: auto;
+    position: absolute;
+    transform: translate(0%, -50%);
+}

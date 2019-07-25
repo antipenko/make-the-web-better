@@ -379,6 +379,46 @@
     </section>
 
     <section class="slide">
+        <h2 class="">Опитимизируйте медиа</h2>
+        <ol>
+            <li class="next"><a href="tinypng.com">tinypng</a></li>
+            <li class="next"><a href="https://jakearchibald.github.io/svgomg/">svgomg</a></li>
+            <li class="next"><a href="https://www.npmjs.com/package/imagemin">imagemin</a></li>
+            <li class="next"><a href="https://ffmpeg.org/">ffmpeg</a></li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <picture>
+            <img src="pictures/tinypng.jpg" class="cover" alt="tinypng">
+        </picture>
+    </section>
+    <section class="slide">
+        <picture>
+            <img src="pictures/SVGOMG.png" class="cover" alt="SVGOMG">
+        </picture>
+    </section>
+
+    <section class="slide">
+        ffmpeg -i name-file.mp4 -map_metadata -1 -c:a libfdk_aac -c:v libx264 -crf 24 -preset veryslow -profile:v main -pix_fmt yuv420p -movflags +faststart -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" new-name.h264.mp4
+    </section>
+
+    <section class="slide">
+        <h2 class="">Вынесите критический css в head</h2>
+        <h3>
+           <a href="https://www.npmjs.com/package/gulp-critical-css"> gulp-critical-css</a>
+        </h3>
+        <h3><a href="https://medium.com/web-standards/critical-and-progressive-css-d6611f034d7d">Критический CSS + прогрессивный CSS = ?</a></h3>
+        <h3>
+            <a href="https://www.youtube.com/watch?v=7drmKk4EBGc">Уменьшаем CSS лениво, Денис Завгородний </a>
+    </h3>
+    </section>
+
+    <section class="slide">
+        <h2>Доступность</h2>
+    </section>
+
+    <section class="slide">
         <h2>Even tables</h2>
         <table>
             <tr>

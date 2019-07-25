@@ -248,12 +248,7 @@
     </section>
 
     <!-- Что он умеет?  -->
-    <!-- Что он умеет? несколько слайдов с примерами и разбором того, что в них  -->
-    <!-- Что он умеет? несколько слайдов с примерами и разбором того, что в них  -->
 
-    <!-- подробное объяснение -->
-
-    <!-- Что делать с этим дальше? -->
     <!-- Продвинутый вариант использования -->
 
     <section class="slide">
@@ -334,6 +329,44 @@
         </div>
     </section>
 
+    <!-- Что делать с этим дальше? -->
+
+    <section class="slide">
+        <h2 class="shrink shout">Практика</h2>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/ba-1.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 class="shrink shout smaller">Сжимаем все текстовые файлы, </br> которые можно сжать (html, css, js)</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="">Изображения конвертируем в WEBP</h2>
+        <pre>
+            <code>var webp = require("gulp-webp");</code>
+            <code>gulp.task("webp", function () {</code>
+                <code>  return gulp.src("source/img/**/*.{png,jpg}")</code>
+                  <code>    .pipe(webp({quality: 90}))</code>
+                  <code>    .pipe(gulp.dest("build/img"));</code>
+              <code>});</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2 class="">Изображения конвертируем в WEBP</h2>
+        <pre>
+            <code>picture</code>
+            <code>    source srcset="photo-01-370x209.webp" type="image/webp"</code>
+            <code>    source srcset="photo-01-370x209.jpg" type="image/jpeg"</code>
+            <code>    img src="photo-01-370x209.jpg"  alt="clever man"</code>
+            <code>/picture</code>
+        </pre>
+    </section>
 
     <section class="slide">
         <h2>Even tables</h2>

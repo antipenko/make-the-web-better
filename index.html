@@ -415,9 +415,88 @@
     </section>
 
     <section class="slide">
-        <h2>Доступность</h2>
+        <h2>Управляйте загрузкой внешних ресурсов</h2>
+        <a href="https://css-live.ru/articles/css-i-proizvoditelnost-seti.html">CSS и производительность</a>
     </section>
 
+    <section class="slide">
+            <h2>Помни о конечном результате</h2>
+            <p>Полная проверка, после всех этапов разработки. <br> Знайте, что подключается на вашей странице и для чего</p>
+        </section>
+
+    <section class="slide">
+        <h2>Доступность</h2>
+        <picture><img src="pictures/ba-2.png" alt="lighthouse дступность" class="img"></picture>
+    </section>
+
+    <section class="slide">
+        <h2>Разберитесь с ARIA</h2>
+        <em class="">Вам не нужно знать все aria аттрибуты наизусть. Просто обращайте на них внимание и заполняйте осмысленно</em>
+        <img src="pictures/ba-3.png" alt="fix aria" class="img">
+    </section>
+
+    <section class="slide">
+            <h2>Договоритесь с дизайнером о контрасте</h2>
+            <img src="pictures/ba-4.png" alt="fix contrast" class="img">
+        </section>
+        <section class="slide">
+            <h2 class="smaller">Договоритесь с дизайнером о контрасте</h2>
+            <img src="pictures/ba-5.png" alt="fix contrast" class="img--small">
+            <img src="pictures/ba-6.png" alt="fix contrast" class="img--small next">
+        </section>
+        <section class="slide">
+                <h2 class="">У всего должно быть текстовое описание</h2>
+                <img src="pictures/ba-7.png" alt="текстовое описание" class="img">
+        </section>
+
+        <section class="slide">
+                <h2 class="">У всего должно быть текстовое описание</h2>
+                <pre>
+                    <code>&lt;li</code>
+                    <code>  &lt;a href="some-link.html"</code>
+                    <code class="mark">  &lt;span class="visually-hidden"</code>
+                    <code>      &lt;i class="fa fa-facebook"</code>
+                    <code>  &lt;/a</code>
+                    <code>&lt;/li</code>
+                </pre>
+        </section>
+
+        <section class="slide">
+                <h2 class="">У всего должно быть текстовое описание</h2>
+                <pre style="font-size: .75em;">
+                    <code>.visually-hidden{</code>
+                        <code>  position: absolute !important;</code>
+                        <code>  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */</code>
+                        <code>  clip: rect(1px, 1px, 1px, 1px);</code>
+                        <code>  padding:0 !important;</code>
+                        <code>  border:0 !important;</code>
+                        <code>  height: 1px !important; </code>
+                        <code>  width: 1px !important; </code>
+                        <code>  overflow: hidden;</code>
+                    <code>}</code>
+                </pre>
+        </section>
+        
+        <section class="slide">
+                <h2 class="">У всего должно быть текстовое описание</h2>
+                <pre>
+                    <code>&lt;li</code>
+                    <code>  &lt;a href="some-link.html" <mark>aria-label='facebook'</mark></code>
+                    <code>      &lt;i class="fa fa-facebook"</code>
+                    <code>  &lt;/a</code>
+                    <code>&lt;/li</code>
+                </pre>
+        </section>
+
+        <section class="slide">
+                <h2 class="">Ваш HTML должен быть валидным</h2>
+                <div class="text-center">
+                <img src="pictures/W3C.png" style="width: 50%;" alt="w3c">
+            </div>
+                <div class="text-center">
+                <a href="https://validator.w3.org/">https://validator.w3.org/</a>
+            </div>
+        </section>
     <section class="slide">
         <h2>Even tables</h2>
         <table>

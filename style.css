@@ -1,0 +1,43 @@
+.flex{
+    display: flex;
+}
+
+.title-wrapper{
+    display: flex;
+    align-items: baseline;
+}
+
+.shout.smaller
+{
+    font-size: 2em;
+}
+
+.smaller{
+    font-size: .5em;
+}
+
+.slide .title--white{
+    color: #fff;
+}
+
+.cover--full{
+    width: 100%;
+}
+.img{
+    max-width: 100%;
+}
+
+.img--small{
+    max-height: 70%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.cover-right{
+    right: 0;
+    left: auto;
+    position: absolute;
+    transform: translate(0%, -50%);
+}

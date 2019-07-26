@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Shower Presentation Engine</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         .shower {
             --slide-ratio: calc(16 / 9);
         }
     </style>
 </head>
+
 <body class="shower list">
 
     <header class="caption">
@@ -19,10 +22,8 @@
     </header>
 
     <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
         <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
+            <img class="cover" src="pictures/hero.jpg" alt="make the web better. Vlad Antypenko - beetrot academy">
             <figcaption class="copyright right white">
                 <a href="http://fiftyfootshadows.net/">© John Carey</a>
             </figcaption>
@@ -49,109 +50,460 @@
         </style>
     </section>
 
+    <!-- Agenda -->
     <section class="slide">
-        <h2>Shower key features</h2>
+        <h2>Что сегодня будет</h2>
         <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
+            <li>Проблема</li>
+            <li>Варианты решения</li>
+            <li>Разбор инструмента</li>
+            <li>Дополнительные фишки</li>
         </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
     </section>
 
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-    </section>
 
+    <!-- about me  -->
     <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+        <p>Еще раз</p>
+
+        <div class="flex title-wrapper">
+            <h2>Я Владик</h2>
+            <span>, люблю говорить про СSS</span>
         </div>
+        <ul>
+            <li>Пишу фронтед</li>
+            <li>Делаю митапы и конференции</li>
+            <li>Росту в глубь</li>
+            <li>Считаю что практика важнее, но при этом никогда не против упороться и перечитать кусок спецфикации</li>
+        </ul>
+
+        <style>
+
+        </style>
+
+    </section>
+
+    <!-- trouble  -->
+    <section class="slide">
+        <h2 class="shout shrink">Проблема</h2>
     </section>
 
     <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
-    </section>
-
-    <section class="slide">
-        <h2>Serious citations</h2>
         <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
+            <img class="cover" src="pictures/trouble-2.jpg" alt="make the web better. Vlad Antypenko - beetrot academy">
         </figure>
     </section>
 
     <section class="slide">
-        <h2>Code samples</h2>
+        <h2>Современные разработчики положили 🔩 на то, что является результатом их работы</h2>
+        <ol>
+            <li class="next">SPA</li>
+            <li class="next">Preprocessor</li>
+            <li class="next">But it will work only once</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Впринципе хромает качество</h2>
+        <ol>
+            <li class="next">Новичок</li>
+            <li class="next">Нет человека свыше(ментора)</li>
+            <li class="next">Наше любимое "ну оно же работает"</li>
+            <li class="next">Коммуникация с другими участниками</li>
+        </ol>
+    </section>
+
+    <!-- Проблемы новичков - гифка -->
+    <section class="slide">
+        <h2 class="title--white">Проблемы новичка</h2>
+        <figure>
+            <img class="cover" src="pictures/beginner.jpg" alt="я не знаю как это правильно сделать">
+        </figure>
+    </section>
+
+    <!-- Отсутствие ментора - проблема оценки качества -->
+    <section class="slide" id="mentor">
+        <h2 class="title--white">Никто не проверяет</h2>
+        <!-- картинка с поиска : ментор мем -->
+        <figure>
+            <img class="cover cover--full"
+                src="https://static.1tv.ru/uploads/photo/image/1/big/471091_big_0aa67c67ac.jpg" alt="Наставники">
+        </figure>
+
+        <style>
+            #mentor h2 {
+                position: absolute;
+                bottom: 2em;
+                right: 2em;
+                left: auto;
+            }
+        </style>
+    </section>
+
+    <!-- И так пойдет - гифка -->
+    <section class="slide">
+        <!-- <h2 class="title--white">Проблемы новичка</h2> -->
+        <figure>
+            <img class="cover" src="pictures/what-ever.gif" alt="и так пойдет">
+        </figure>
+    </section>
+
+    <!-- качество. подводку к Accessability  -->
+    <section class="slide">
+        <h2 class="shout shrink smaller">
+            <div class="smaller"> Для нас почему то</div>
+            <div>Качество != (Accessability & SEO )</div>
+        </h2>
+    </section>
+
+    <!-- слайд про скандал связанный с доступностью -->
+
+
+    <!-- Подводка почему все так -->
+    <section class="slide">
+        <h2 class="shout shrink ">
+            Почему так? 🤷
+        </h2>
+    </section>
+    <!-- Причины -->
+    <section class="slide">
+        <h2 class="">
+            Почему так? 🤷
+        </h2>
+        <ol>
+            <li class="next">Отсутствие фундамента</li>
+            <li class="next">Нет возможности проверить качество своей работы</li>
+            <li class="next">Пофигизм</li>
+        </ol>
+        <img src="pictures/result-all-problem.png" alt="" class="next cover cover-right">
+    </section>
+
+
+    <!-- Проблема оценки - решение -->
+
+    <section class="slide">
+        <h2 class="">
+            Решения 🧞‍♂️
+        </h2>
+        <ol>
+            <li class="next">Ментор, наставник, любой, кто сможет сказать что не так с твоим кодом</li>
+            <li class="next">Код ревью</li>
+            <li class="next">Самопроверка</li>
+        </ol>
+    </section>
+
+
+
+    <!-- Знакомьтесь lighthouse -->
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/lighthouse.JPG" alt="картинка маяк">
+        </figure>
+    </section>
+
+
+
+    <!-- Как его найти и запустить? -->
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/lh-1.png" alt="открываем инспектор">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/lh-2.png" alt="открываем аудит">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/lh-3.png" alt="открываем аудит">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/lh-4.png" alt="открываем аудит">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/lh-5.png" alt="открываем аудит">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/lh-6.png" alt="открываем аудит">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <video class="cover" autoplay src="pictures/lh-7.mp4" alt="открываем аудит"></video>
+        </figure>
+    </section>
+
+    <!-- Что он умеет?  -->
+
+    <!-- Продвинутый вариант использования -->
+
+    <section class="slide">
+        <h2 class="shrink shout smaller">
+            <a href="https://www.npmjs.com/package/lighthouse">
+                https://www.npmjs.com/package/lighthouse
+            </a>
+        </h2>
+    </section>
+
+    <section class="slide">
         <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
+                <code>$ npm install -g lighthouse</code>
+                <code>$ lighthouse https://beetroot.academy/</code>
+            </pre>
+    </section>
+
+    <!-- lighthouse cli -->
+    <section class="slide">
+        <h2 class="shrink shout smaller">
+            <a href="https://www.npmjs.com/package/lighthouse-ci">
+                https://www.npmjs.com/package/lighthouse-ci
+            </a>
+        </h2>
+    </section>
+
+    <!-- пара слайдов о том, как это использовать -->
+
+
+    <!-- 
+        для галпа вы можете это добавить в свой сборщик, но особого смысла в этом нет.
+        потому что запускать его на каждом этапе бессмысленно, т.к. он занимает какое то время и 
+        просто генерирует json или html-страничку с результатами.
+        но если вам вдруг нужно, то сделать это можно так:
+     -->
+
+    <!-- еще раз вся документация тут -->
+    <section class="slide">
+        <h2 class="shrink shout smaller">
+            <a href="https://www.npmjs.com/package/lighthouse">
+                https://www.npmjs.com/package/lighthouse
+            </a>
+        </h2>
+    </section>
+
+
+    <!-- самый крутой кейс использования -->
+    <section class="slide">
+        <h2 class="shout smaller">Cамый крутой кейс использования</h2>
+    </section>
+
+    <section class="slide">
+        <picture>
+            <img src="pictures/git-lh.png" class="img" alt="git bot">
+        </picture>
+        <div class="text-center">
+            <a href="https://github.com/GoogleChromeLabs/lighthousebot">
+                https://github.com/GoogleChromeLabs/lighthousebot
+            </a>
+        </div>
+
+    </section>
+
+    <section class="slide text-center">
+        <img src="pictures/git-lh-setup.png" alt="screen of article Using Lighthouse Bot to set a performance budget"
+            class="img img--small">
+        <div>
+            <a href="https://web.dev/using-lighthouse-bot-to-set-a-performance-budget">
+                https://web.dev/using-lighthouse-bot-to-set-a-performance-budget
+            </a>
+        </div>
+    </section>
+
+    <!-- Что делать с этим дальше? -->
+
+    <section class="slide">
+        <h2 class="shrink shout">Практика</h2>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/ba-1.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 class="shrink shout smaller">Сжимаем все текстовые файлы, </br> которые можно сжать (html, css, js)</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="">Изображения конвертируем в WEBP</h2>
+        <pre>
+            <code>var webp = require("gulp-webp");</code>
+            <code>gulp.task("webp", function () {</code>
+                <code>  return gulp.src("source/img/**/*.{png,jpg}")</code>
+                  <code>    .pipe(webp({quality: 90}))</code>
+                  <code>    .pipe(gulp.dest("build/img"));</code>
+              <code>});</code>
         </pre>
     </section>
 
     <section class="slide">
-        <h2>Even tables</h2>
-        <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
-        </table>
-        <p>It’s good to have information organized.</p>
+        <h2 class="">Изображения конвертируем в WEBP</h2>
+        <pre>
+            <code>&lt;picture</code>
+            <code>  &lt;source srcset="photo-01-370x209.webp" type="image/webp"</code>
+            <code>  &lt;source srcset="photo-01-370x209.jpg" type="image/jpeg"</code>
+            <code>  &lt;img src="photo-01-370x209.jpg"  alt="clever man"</code>
+            <code>&lt;/picture</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2 class="">Используйте правильные форматы для медиа</h2>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/svg-vs-png.png" alt="png vs svg">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 class="">Опитимизируйте медиа</h2>
+        <ol>
+            <li class="next"><a href="tinypng.com">tinypng</a></li>
+            <li class="next"><a href="https://jakearchibald.github.io/svgomg/">svgomg</a></li>
+            <li class="next"><a href="https://www.npmjs.com/package/imagemin">imagemin</a></li>
+            <li class="next"><a href="https://ffmpeg.org/">ffmpeg</a></li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <picture>
+            <img src="pictures/tinypng.jpg" class="cover" alt="tinypng">
+        </picture>
+    </section>
+    <section class="slide">
+        <picture>
+            <img src="pictures/SVGOMG.png" class="cover" alt="SVGOMG">
+        </picture>
+    </section>
+
+    <section class="slide">
+        ffmpeg -i name-file.mp4 -map_metadata -1 -c:a libfdk_aac -c:v libx264 -crf 24 -preset veryslow -profile:v main
+        -pix_fmt yuv420p -movflags +faststart -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" new-name.h264.mp4
+    </section>
+
+    <section class="slide">
+        <h2 class="">Вынесите критический css в head</h2>
+        <h3>
+            <a href="https://www.npmjs.com/package/gulp-critical-css"> gulp-critical-css</a>
+        </h3>
+        <h3><a href="https://medium.com/web-standards/critical-and-progressive-css-d6611f034d7d">Критический CSS +
+                прогрессивный CSS = ?</a></h3>
+        <h3>
+            <a href="https://www.youtube.com/watch?v=7drmKk4EBGc">Уменьшаем CSS лениво, Денис Завгородний </a>
+        </h3>
+    </section>
+
+    <section class="slide">
+        <h2>Управляйте загрузкой внешних ресурсов</h2>
+        <a href="https://css-live.ru/articles/css-i-proizvoditelnost-seti.html">CSS и производительность</a>
+    </section>
+
+    <section class="slide">
+        <h2>Помни о конечном результате</h2>
+        <p>Полная проверка, после всех этапов разработки. <br> Знайте, что подключается на вашей странице и для чего</p>
+    </section>
+
+    <section class="slide">
+        <img src="pictures/ba-fullperf.png" alt="perfomance " class="img">
+    </section>
+
+    <section class="slide">
+        <h2>Доступность</h2>
+        <picture><img src="pictures/ba-2.png" alt="lighthouse дступность" class="img"></picture>
+    </section>
+
+    <section class="slide">
+        <h2>Разберитесь с ARIA</h2>
+        <em class="">Вам не нужно знать все aria аттрибуты наизусть. Просто обращайте на них внимание и заполняйте
+            осмысленно</em>
+        <img src="pictures/ba-3.png" alt="fix aria" class="img">
+    </section>
+
+    <section class="slide">
+        <h2>Договоритесь с дизайнером о контрасте</h2>
+        <img src="pictures/ba-4.png" alt="fix contrast" class="img">
+    </section>
+    <section class="slide">
+        <h2 class="smaller">Договоритесь с дизайнером о контрасте</h2>
+        <img src="pictures/ba-5.png" alt="fix contrast" class="img--small">
+        <img src="pictures/ba-6.png" alt="fix contrast" class="img--small next">
+    </section>
+    <section class="slide">
+        <h2 class="">У всего должно быть текстовое описание</h2>
+        <img src="pictures/ba-7.png" alt="текстовое описание" class="img">
+    </section>
+
+    <section class="slide">
+        <h2 class="">У всего должно быть текстовое описание</h2>
+        <pre>
+                    <code>&lt;li</code>
+                    <code>  &lt;a href="some-link.html"</code>
+                    <code class="mark">  &lt;span class="visually-hidden"</code>
+                    <code>      &lt;i class="fa fa-facebook"</code>
+                    <code>  &lt;/a</code>
+                    <code>&lt;/li</code>
+                </pre>
+    </section>
+
+    <section class="slide">
+        <h2 class="">У всего должно быть текстовое описание</h2>
+        <pre style="font-size: .75em;">
+                    <code>.visually-hidden{</code>
+                        <code>  position: absolute !important;</code>
+                        <code>  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */</code>
+                        <code>  clip: rect(1px, 1px, 1px, 1px);</code>
+                        <code>  padding:0 !important;</code>
+                        <code>  border:0 !important;</code>
+                        <code>  height: 1px !important; </code>
+                        <code>  width: 1px !important; </code>
+                        <code>  overflow: hidden;</code>
+                    <code>}</code>
+                </pre>
+    </section>
+
+    <section class="slide">
+        <h2 class="">У всего должно быть текстовое описание</h2>
+        <pre>
+                    <code>&lt;li</code>
+                    <code>  &lt;a href="some-link.html" <mark>aria-label='facebook'</mark></code>
+                    <code>      &lt;i class="fa fa-facebook"</code>
+                    <code>  &lt;/a</code>
+                    <code>&lt;/li</code>
+                </pre>
+    </section>
+
+    <section class="slide">
+        <h2 class="">Ваш HTML должен быть валидным</h2>
+        <div class="text-center">
+            <img src="pictures/W3C.png" style="width: 50%;" alt="w3c">
+        </div>
+        <div class="text-center">
+            <a href="https://validator.w3.org/">https://validator.w3.org/</a>
+        </div>
+    </section>
+    <section class="slide">
+        <h2>Best Practices</h2>
+        <p class="next">Остается заданием на дом 📗</p>
     </section>
 
     <section class="slide" id="picture">
-        <h2>Pictures</h2>
+        <h2>Конечный продукт хорошо, но что с моим процессом?</h2>
         <figure>
             <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
             <figcaption class="copyright right white">
@@ -166,36 +518,99 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
-    </section>
-
-    <section class="slide">
-        <h2>Inner navigation</h2>
+        <h2>Линтите </h2>
         <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
+            <li>
+                <a href="https://eslint.org/">eslint</a>
+            </li>
+            <li>
+                <a href="https://www.npmjs.com/package/csslint">CSSLint</a>
+            </li>
+            <li>
+                <a
+                    href="https://github.com/simonsmith/stylelint-selector-bem-pattern">stylelint-selector-bem-pattern</a>
+            </li>
         </ol>
     </section>
 
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
+    <section class="slide">
+        <h2>Начните с простого </h2>
+        <h3 class="shout shrink smaller" style="font-size: 1.5em;"><a
+                href="https://maximgatilin.github.io/stylelint-config/">https://maximgatilin.github.io/stylelint-config/</a>
+        </h3>
+    </section>
+
+    <section class="slide">
+        <picture>
+            <img src="pictures/Stylelin.png" alt="Stylelint-gen" class="cover">
+        </picture>
+    </section>
+
+    <section class="slide">
+        <h2>3 заповеди разработчика</h2>
+        <figure>
+            <blockquote>
+                <p> 1) Сделать счастливым дизайнера</p>
+                <p> 2) Сделать счастливым программиста</p>
+                <p> 3) Сделать счастливым следующего парня работающего с твоим кодом</p>
+            </blockquote>
+            <figcaption>Юрий Артюх</figcaption>
+        </figure>
+    </section>
+
+    <section class="slide center">
+        <h2 class=" shrink" style="font-size: 3em; color: #fff; text-shadow: 1px 1px 2px #847f7f;">
+            Делайте то, что приносит вам кайф
         </h2>
+        <figure>
+            <img class="cover" style="opacity:.9; width: 100%;" src="pictures/slonenok.jpg"
+                alt="Hands on the orange typewriter in a park">
+        </figure>
+    </section>
+
+    <section class="slide" id="thanks">
+        <h2 class="">Спасибо за внимание</h2>
+        <h2>Вопросы/Cоветы</h2>
+        <div style="position: absolute;bottom: 20px; display: -webkit-flex;">
+            <p class="social social_twi"> <a href="https://twitter.com/VladAntipenko">@VladAntipenko</a></p>
+            <p class="social social_fb"> <a
+                    href="https://www.facebook.com/profile.php?id=100007591513296">AntipenkoVlad</a></p>
+            <p class="social social_tl"> <a href="tg://resolve?domain=vladantipenko">vladantipenko</a></p>
+        </div>
+        <br>
+
         <style>
-            #see-more h2 {
-                font-size: 100px
+            #thanks .social {
+                position: relative;
+                margin-right: 50px;
+                padding-left: 72px;
             }
 
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
+            #thanks .social:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 48px;
+                height: 48px;
+                background-size: 48px 48px;
+                background-repeat: no-repeat;
+            }
+
+            #thanks .social_fb:before {
+                background-image: url('data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2032%2032%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M18%2032v-14h6l1-6h-7v-3c0-2%201.002-3%203-3h3v-6h-5c-5%200-7%203-7%208v4h-6v6h6v14h6z%22%20fill%3D%22%233B5998%22/%3E%3C/svg%3E');
+            }
+
+            #thanks .social_twi:before {
+                background-image: url('data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2032%2032%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M31.993%206.077c-1.177.523-2.441.876-3.77%201.033%201.355-.812%202.396-2.098%202.887-3.63-1.269.751-2.673%201.299-4.168%201.592-1.198-1.275-2.904-2.072-4.793-2.072-3.625%200-6.562%202.938-6.562%206.563%200%20.514.057%201.016.169%201.496-5.455-.274-10.291-2.887-13.529-6.858-.564.97-.888%202.097-.888%203.3%200%202.278%201.159%204.286%202.919%205.464-1.075-.035-2.087-.329-2.972-.821l-.001.082c0%203.181%202.262%205.834%205.265%206.437-.55.149-1.13.23-1.729.23-.424%200-.834-.041-1.234-.117.834%202.606%203.259%204.504%206.13%204.558-2.245%201.76-5.075%202.811-8.15%202.811-.53%200-1.053-.031-1.566-.092%202.904%201.86%206.354%202.947%2010.061%202.947%2012.072%200%2018.675-10.001%2018.675-18.675%200-.284-.008-.568-.02-.85%201.283-.925%202.395-2.08%203.276-3.398z%22%20fill%3D%22%2355ACEE%22/%3E%3C/svg%3E');
+            }
+
+            #thanks .social_tl:before {
+                background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUxMiA1MTIiIGhlaWdodD0iNTEycHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik00OTIuMTY4LDQ0Mi43MzJjMCwzNC4xNzEtMjcuNzAzLDYxLjg3Mi02MS44NzMsNjEuODcySDgwLjU1MWMtMzQuMTcxLDAtNjEuODc0LTI3LjcwMS02MS44NzQtNjEuODcyICBWOTIuOTg3YzAtMzQuMTcxLDI3LjcwMy02MS44NzMsNjEuODc0LTYxLjg3M2gzNDkuNzQ0YzM0LjE3LDAsNjEuODczLDI3LjcwMSw2MS44NzMsNjEuODczVjQ0Mi43MzJ6IiBmaWxsPSIjMkE2NzlFIi8+PHBhdGggZD0iTTQ5Mi4xNjgsNDE3Ljk4OGMwLDM0LjE3Mi0yNy43MDMsNjEuODczLTYxLjg3Myw2MS44NzNIODAuNTUxYy0zNC4xNzEsMC02MS44NzQtMjcuNzAxLTYxLjg3NC02MS44NzMgIFY2OC4yNDNjMC0zNC4xNzEsMjcuNzAzLTYxLjg3Miw2MS44NzQtNjEuODcyaDM0OS43NDRjMzQuMTcsMCw2MS44NzMsMjcuNyw2MS44NzMsNjEuODcyVjQxNy45ODh6IiBmaWxsPSIjNjRBOURDIi8+PHBhdGggZD0iTTQ5MS4yMzQsNDI4LjY0NWMwLjEzOS0wLjc5NywwLjI2LTEuNiwwLjM2OS0yLjQwN2MwLjAyMS0wLjE1MSwwLjAzOS0wLjMwNCwwLjA1OS0wLjQ1NiAgYzAuMDkxLTAuNzE1LDAuMTcxLTEuNDMyLDAuMjM4LTIuMTUyYzAuMDMzLTAuMzY3LDAuMDU3LTAuNzM4LDAuMDg0LTEuMTA3YzAuMDQxLTAuNTQ0LDAuMDg0LTEuMDg2LDAuMTA5LTEuNjM1ICBjMC4wNDUtMC45NjEsMC4wNzQtMS45MjYsMC4wNzQtMi44OThWMjA4LjE5Yy0wLjY1Ni0wLjY0NS0xLjMxNC0xLjI5LTEuOTY1LTEuOTM3Yy0yLjA4OC0yLjA3My00LjExMy00LjIyOS02LjI1NC02LjI0NSAgYy0yLjE0My0yLjAxNy00LjA3Mi00LjI2OS02LjI1OS02LjIzOGMtMS45NDItMi4yMDctNC4yMjItNC4xMjctNi4yNC02LjI2M2MtMi4wMjEtMi4xMzgtNC4xNjEtNC4xODEtNi4yNDctNi4yNTQgIGMtMi4wODgtMi4wNzMtNC4xMTMtNC4yMjktNi4yNTQtNi4yNDVjLTIuMTQzLTIuMDE3LTQuMDcyLTQuMjY5LTYuMjU5LTYuMjM4Yy0xLjk0Mi0yLjIwNy00LjIyMi00LjEyNy02LjI0LTYuMjYzICBjLTIuMDIxLTIuMTM4LTQuMTYxLTQuMTgxLTYuMjQ3LTYuMjU0Yy0yLjA4OC0yLjA3My00LjExMy00LjIyOS02LjI1NC02LjI0NWMtMi4xNDMtMi4wMTctNC4wNzItNC4yNjktNi4yNTktNi4yMzggIGMtMS45NDItMi4yMDctNC4yMjItNC4xMjctNi4yNC02LjI2M2MtMi4wMjEtMi4xMzgtNC4xNjEtNC4xODEtNi4yNDctNi4yNTRjLTQuMTEzLTQuMDg4LTguMDk2LTguMzQ4LTEyLjMyLTEyLjMxOCAgYy0zLjc4Ny0zLjU1OS05LjI3MS0zLjk4Ni0xNC4wMzUtMi4zODhjLTAuNzc1LDAuMjYtMS41MTYsMC42MDItMi4yNzgsMC44OTZjLTEuMDI4LDAuMzk2LTIuMDU4LDAuNzk0LTMuMDg3LDEuMTkgIGMtNC45MzksMS45MDUtOS44NzksMy44MTEtMTQuODE4LDUuNzE2Yy04LjA3NiwzLjExNS0xNi4xNTEsNi4yMjktMjQuMjI3LDkuMzQ0Yy0xMC4zNjEsMy45OTctMjAuNzIzLDcuOTkzLTMxLjA4NSwxMS45OSAgYy0xMS43OTksNC41NTEtMjMuNTk4LDkuMTAyLTM1LjM5NiwxMy42NTJjLTEyLjM4OCw0Ljc3Ny0yNC43NzQsOS41NTUtMzcuMTYxLDE0LjMzM2MtMTIuMTI1LDQuNjc3LTI0LjI1MSw5LjM1NC0zNi4zNzcsMTQuMDMxICBjLTExLjAxNSw0LjI0OS0yMi4wMzEsOC40OTgtMzMuMDQ2LDEyLjc0NmMtOS4wNTYsMy40OTMtMTguMTEyLDYuOTg2LTI3LjE2OCwxMC40NzljLTYuMjQ4LDIuNDA5LTEyLjQ5NSw0LjgxOS0xOC43NDMsNy4yMjkgIGMtMi41ODksMS01LjE3OSwxLjk5OC03Ljc2OSwyLjk5N2MtMi45NDIsMS4xMzUtNS44MzksMi41NjktOC40MjUsNC4zODFjLTIuNjMsMS44NDItNS41NjEsNC41MTUtNS44MTcsNy45NDEgIGMtMC4yNzEsMy42MTksMi45MjgsNi4wMTQsNS4yMTgsOC4yOTZjMi4wODMsMi4wNzgsNC4xMTEsNC4yMzcsNi4yNTcsNi4yNDljMi4xNDgsMi4wMTQsNC4wNjYsNC4yOTEsNi4yNyw2LjI0NiAgYzEuOTIyLDIuMjE3LDQuMjI0LDQuMTEyLDYuMjI5LDYuMjU0YzIuMDA4LDIuMTQ1LDQuMTYzLDQuMTc2LDYuMjQ0LDYuMjUxYzIuMDgzLDIuMDc3LDQuMTExLDQuMjM3LDYuMjU3LDYuMjQ5ICBjMi4xNDgsMi4wMTQsNC4wNjYsNC4yOTEsNi4yNyw2LjI0NmMxLjkyMiwyLjIxNyw0LjIyNCw0LjExMSw2LjIyOSw2LjI1NGMyLjAwOCwyLjE0NSw0LjE2Myw0LjE3Niw2LjI0NCw2LjI1MSAgYzIuMDgzLDIuMDc3LDQuMTExLDQuMjM3LDYuMjU3LDYuMjQ5YzIuMTQ4LDIuMDE0LDQuMDY2LDQuMjkxLDYuMjcsNi4yNDZjMS45MjIsMi4yMTcsNC4yMjQsNC4xMTEsNi4yMjksNi4yNTQgIGMyLjAwOCwyLjE0NSw0LjE2Myw0LjE3Niw2LjI0NCw2LjI1MWMyLjA4MywyLjA3Nyw0LjExMSw0LjIzNyw2LjI1Nyw2LjI0OWMyLjE0OCwyLjAxNCw0LjA2Niw0LjI5MSw2LjI3LDYuMjQ2ICBjMS45MjIsMi4yMTcsNC4yMjQsNC4xMTEsNi4yMjksNi4yNTRjMC45NzUsMS4wNDEsMi4wNDQsMS45OSwzLjAyNSwzLjAyNWMwLjQwMywwLjQyNiwwLjQ5LDAuOTQ3LDAuNjcyLDEuNTA2ICBjMC40NTIsMS4zODcsMC45MTQsMi43NywxLjM3OCw0LjE1MmMwLjc2MywyLjI2NiwxLjI0NSw0LjYzNywyLjEwNCw2Ljg2OWMwLjY5NywxLjgxMSwyLjAyMiwyLjg2MSwzLjMwNyw0LjIzOCAgYzEuNjA3LDEuNzIzLDMuMzkzLDMuMjc3LDUsNWMzLjIxNCwzLjQ0Myw2Ljc4Niw2LjU1NSwxMCwxMGMzLjIxNCwzLjQ0Myw2Ljc4Niw2LjU1NSwxMCwxMGMzLjIxNCwzLjQ0Myw2Ljc4Niw2LjU1NSwxMCwxMCAgYzMuMjE0LDMuNDQzLDYuNzg2LDYuNTU1LDEwLDEwYzMuMjE0LDMuNDQzLDYuNzg2LDYuNTU1LDEwLDEwYzMuMjE0LDMuNDQzLDYuNzg2LDYuNTU1LDEwLDEwYzMuMjE0LDMuNDQzLDYuNzg2LDYuNTU1LDEwLDEwICBjMy4yMTQsMy40NDMsNi43ODYsNi41NTUsMTAsMTBjMy4yMTQsMy40NDMsNi43ODYsNi41NTUsMTAsMTBjMy4yMTQsMy40NDMsNi43ODYsNi41NTUsMTAsMTBjMy4yMTQsMy40NDMsNi43ODYsNi41NTUsMTAsMTAgIGMzLjA3MiwzLjI5MSw2LjQ2Myw2LjI4Nyw5LjU2Myw5LjU1M2g5Mi44MjJDNDYwLjgzLDQ3OS44NjEsNDg2LjE4Miw0NTcuNzM0LDQ5MS4yMzQsNDI4LjY0NXoiIGZpbGw9IiMzQzdFQzgiLz48cGF0aCBkPSJNMzg2Ljg5OCwxMTcuMzE2TDExNy42MTUsMjIxLjE3OWMtMTguMzc5LDcuMzc0LTE4LjI3LDE3LjYyNS0zLjM1LDIyLjE5Nmw2Ny4xNiwyMC45NjJsMjUuNjk3LDc4Ljc4NSAgYzMuMTI0LDguNjIzLDEuNTg0LDEyLjA0MywxMC42MzksMTIuMDQzYzYuOTg4LDAsMTAuMDg4LTMuMTg2LDEzLjk4LTYuOTg4YzIuNDc1LTIuNDIyLDE3LjE3LTE2LjcwOSwzMy41NzgtMzIuNjYybDY5Ljg1OSw1MS42MTUgIGMxMi44NTUsNy4wOTIsMjIuMTM3LDMuNDE4LDI1LjMzOC0xMS45MzlsNDUuODU3LTIxNi4wOTZDNDExLjA2OCwxMjAuMjcyLDM5OS4xOTcsMTExLjczNCwzODYuODk4LDExNy4zMTZ6IE0xOTEuOTY1LDI1OS41MjEgIGwxNTEuMzc5LTk1LjUwNmM3LjU1Ny00LjU4MywxNC40ODYtMi4xMTksOC43OTcsMi45MzFMMjIyLjUyMSwyODMuODk2bC01LjA0Nyw1My44M0wxOTEuOTY1LDI1OS41MjF6IiBmaWxsPSIjRkZGRkZGIi8+PC9zdmc+');
             }
         </style>
     </section>
+
 
     <footer class="badge">
         <a href="https://github.com/shower/shower">Fork me on GitHub</a>
@@ -207,4 +622,5 @@
     <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
 
 </body>
+
 </html>

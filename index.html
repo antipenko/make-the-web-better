@@ -50,7 +50,6 @@
         </style>
     </section>
 
-    <!-- Agenda -->
     <section class="slide">
         <h2>Что сегодня будет</h2>
         <ol>
@@ -61,8 +60,6 @@
         </ol>
     </section>
 
-
-    <!-- about me  -->
     <section class="slide">
         <p>Еще раз</p>
 
@@ -71,10 +68,9 @@
             <span>, люблю говорить про СSS</span>
         </div>
         <ul>
-            <li>Пишу фронтед</li>
+            <li>Пишу фронтенд</li>
             <li>Делаю митапы и конференции</li>
-            <li>Росту в глубь</li>
-            <li>Считаю что практика важнее, но при этом никогда не против упороться и перечитать кусок спецфикации</li>
+            <li>Бегаю за проблемами <sub style="font-size: 0.5em;">(о чем мы сегодня в первой части доклада и поговорим)</sub></li>
         </ul>
 
         <style>
@@ -83,7 +79,6 @@
 
     </section>
 
-    <!-- trouble  -->
     <section class="slide">
         <h2 class="shout shrink">Проблема</h2>
     </section>
@@ -113,7 +108,6 @@
         </ol>
     </section>
 
-    <!-- Проблемы новичков - гифка -->
     <section class="slide">
         <h2 class="title--white">Проблемы новичка</h2>
         <figure>
@@ -121,10 +115,9 @@
         </figure>
     </section>
 
-    <!-- Отсутствие ментора - проблема оценки качества -->
     <section class="slide" id="mentor">
         <h2 class="title--white">Никто не проверяет</h2>
-        <!-- картинка с поиска : ментор мем -->
+        
         <figure>
             <img class="cover cover--full"
                 src="https://static.1tv.ru/uploads/photo/image/1/big/471091_big_0aa67c67ac.jpg" alt="Наставники">
@@ -140,15 +133,12 @@
         </style>
     </section>
 
-    <!-- И так пойдет - гифка -->
     <section class="slide">
-        <!-- <h2 class="title--white">Проблемы новичка</h2> -->
         <figure>
             <img class="cover" src="pictures/what-ever.gif" alt="и так пойдет">
         </figure>
     </section>
-
-    <!-- качество. подводку к Accessability  -->
+    
     <section class="slide">
         <h2 class="shout shrink smaller">
             <div class="smaller"> Для нас почему то</div>
@@ -156,16 +146,16 @@
         </h2>
     </section>
 
-    <!-- слайд про скандал связанный с доступностью -->
+    <section class="slide">
+            <img src="pictures/a11.png" alt="" class="img">
+    </section>
 
-
-    <!-- Подводка почему все так -->
     <section class="slide">
         <h2 class="shout shrink ">
             Почему так? 🤷
         </h2>
     </section>
-    <!-- Причины -->
+    
     <section class="slide">
         <h2 class="">
             Почему так? 🤷
@@ -178,9 +168,6 @@
         <img src="pictures/result-all-problem.png" alt="" class="next cover cover-right">
     </section>
 
-
-    <!-- Проблема оценки - решение -->
-
     <section class="slide">
         <h2 class="">
             Решения 🧞‍♂️
@@ -192,19 +179,12 @@
         </ol>
     </section>
 
-
-
-    <!-- Знакомьтесь lighthouse -->
-
     <section class="slide">
         <figure>
             <img class="cover" src="pictures/lighthouse.JPG" alt="картинка маяк">
         </figure>
     </section>
 
-
-
-    <!-- Как его найти и запустить? -->
     <section class="slide">
         <figure>
             <img class="cover" src="pictures/lh-1.png" alt="открываем инспектор">
@@ -247,10 +227,6 @@
         </figure>
     </section>
 
-    <!-- Что он умеет?  -->
-
-    <!-- Продвинутый вариант использования -->
-
     <section class="slide">
         <h2 class="shrink shout smaller">
             <a href="https://www.npmjs.com/package/lighthouse">
@@ -266,7 +242,6 @@
             </pre>
     </section>
 
-    <!-- lighthouse cli -->
     <section class="slide">
         <h2 class="shrink shout smaller">
             <a href="https://www.npmjs.com/package/lighthouse-ci">
@@ -275,17 +250,6 @@
         </h2>
     </section>
 
-    <!-- пара слайдов о том, как это использовать -->
-
-
-    <!-- 
-        для галпа вы можете это добавить в свой сборщик, но особого смысла в этом нет.
-        потому что запускать его на каждом этапе бессмысленно, т.к. он занимает какое то время и 
-        просто генерирует json или html-страничку с результатами.
-        но если вам вдруг нужно, то сделать это можно так:
-     -->
-
-    <!-- еще раз вся документация тут -->
     <section class="slide">
         <h2 class="shrink shout smaller">
             <a href="https://www.npmjs.com/package/lighthouse">
@@ -294,8 +258,6 @@
         </h2>
     </section>
 
-
-    <!-- самый крутой кейс использования -->
     <section class="slide">
         <h2 class="shout smaller">Cамый крутой кейс использования</h2>
     </section>
@@ -321,8 +283,6 @@
             </a>
         </div>
     </section>
-
-    <!-- Что делать с этим дальше? -->
 
     <section class="slide">
         <h2 class="shrink shout">Практика</h2>
@@ -353,11 +313,11 @@
     <section class="slide">
         <h2 class="">Изображения конвертируем в WEBP</h2>
         <pre>
-            <code>&lt;picture</code>
-            <code>  &lt;source srcset="photo-01-370x209.webp" type="image/webp"</code>
-            <code>  &lt;source srcset="photo-01-370x209.jpg" type="image/jpeg"</code>
-            <code>  &lt;img src="photo-01-370x209.jpg"  alt="clever man"</code>
-            <code>&lt;/picture</code>
+            <code>&lt;picture&gt;</code>
+            <code>  &lt;source srcset="photo-01-370x209.webp" type="image/webp"&gt;</code>
+            <code>  &lt;source srcset="photo-01-370x209.jpg" type="image/jpeg"&gt;</code>
+            <code>  &lt;img src="photo-01-370x209.jpg"  alt="clever man"&gt;</code>
+            <code>&lt;/picture&gt;</code>
         </pre>
     </section>
 
@@ -452,12 +412,12 @@
     <section class="slide">
         <h2 class="">У всего должно быть текстовое описание</h2>
         <pre>
-                    <code>&lt;li</code>
-                    <code>  &lt;a href="some-link.html"</code>
-                    <code class="mark">  &lt;span class="visually-hidden"</code>
-                    <code>      &lt;i class="fa fa-facebook"</code>
-                    <code>  &lt;/a</code>
-                    <code>&lt;/li</code>
+                    <code>&lt;li&gt;</code>
+                    <code>  &lt;a href="some-link.html"&gt;</code>
+                    <code &lt; span class="mark">  &lt;span class="visually-hidden" &gt; facebook &lt;/span &gt;</code>
+                    <code>      &lt;i class="fa fa-facebook"&gt;</code>
+                    <code>  &lt;/a&gt;</code>
+                    <code>&lt;/li&gt;</code>
                 </pre>
     </section>
 
@@ -480,11 +440,11 @@
     <section class="slide">
         <h2 class="">У всего должно быть текстовое описание</h2>
         <pre>
-                    <code>&lt;li</code>
-                    <code>  &lt;a href="some-link.html" <mark>aria-label='facebook'</mark></code>
-                    <code>      &lt;i class="fa fa-facebook"</code>
-                    <code>  &lt;/a</code>
-                    <code>&lt;/li</code>
+                    <code>&lt;li&gt;</code>
+                    <code>  &lt;a href="some-link.html" <mark>aria-label='facebook'</mark>&gt;</code>
+                    <code>      &lt;i class="fa fa-facebook"&gt;</code>
+                    <code>  &lt;/a&gt;</code>
+                    <code>&lt;/li&gt;</code>
                 </pre>
     </section>
 
@@ -496,6 +456,10 @@
         <div class="text-center">
             <a href="https://validator.w3.org/">https://validator.w3.org/</a>
         </div>
+    </section>
+
+    <section class="slide">
+        <img src="pictures/ba-fullacc.png" alt="" class="img">
     </section>
     <section class="slide">
         <h2>Best Practices</h2>

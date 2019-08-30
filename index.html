@@ -187,6 +187,12 @@
 
     <section class="slide">
         <figure>
+            <img class="cover" src="pictures/lighthouse.png" alt="картинка logo lighthouse">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <figure>
             <img class="cover" src="pictures/lh-1.png" alt="открываем инспектор">
         </figure>
     </section>
@@ -233,6 +239,13 @@
         <figure>
             <video class="cover" autoplay src="pictures/lh-7.mp4" alt="открываем аудит"></video>
         </figure>
+    </section>
+
+    <section class="slide">
+        <h2 class=" ">
+            Принцип работы 💡:
+        </h2>
+        <em>Очки теперь присуждаются не за выполнение правил, а за скорость.</em>
     </section>
 
     <section class="slide">
@@ -290,6 +303,21 @@
                 https://web.dev/using-lighthouse-bot-to-set-a-performance-budget
             </a>
         </div>
+    </section>
+
+    <section class="slide ">
+            <pre>
+                <code>after_success:</code>
+                ...
+                <code>- npm run lhouse -- --perf=95 https://your-app-link.com/</code>
+            </pre>
+    </section>
+
+    <section class="slide ">
+            <pre>
+                <code>- npm run lhouse -- https://your-app-link.com/</code>
+                <code>- npm run lhouse -- --perf=93 --seo=100 https://your-app-link.com/</code>
+            </pre>
     </section>
 
     <section class="slide">

@@ -24,9 +24,6 @@
     <section class="slide" id="cover">
         <figure>
             <img class="cover" src="pictures/hero.jpg" alt="make the web better. Vlad Antypenko - beetrot academy">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
         </figure>
         <style>
             #cover h2 {
@@ -68,9 +65,11 @@
             <span>, люблю говорить про СSS</span>
         </div>
         <ul>
+            <li>Ленивый прокрастинатор</li>
             <li>Пишу фронтенд</li>
             <li>Делаю митапы и конференции</li>
-            <li>Бегаю за проблемами <sub style="font-size: 0.5em;">(о чем мы сегодня в первой части доклада и поговорим)</sub></li>
+            <li>Бегаю за проблемами <sub style="font-size: 0.5em;">(о чем мы сегодня в первой части доклада и
+                    поговорим)</sub></li>
         </ul>
 
         <style>
@@ -117,7 +116,7 @@
 
     <section class="slide" id="mentor">
         <h2 class="title--white">Никто не проверяет</h2>
-        
+
         <figure>
             <img class="cover cover--full"
                 src="https://static.1tv.ru/uploads/photo/image/1/big/471091_big_0aa67c67ac.jpg" alt="Наставники">
@@ -138,7 +137,7 @@
             <img class="cover" src="pictures/what-ever.gif" alt="и так пойдет">
         </figure>
     </section>
-    
+
     <section class="slide">
         <h2 class="shout shrink smaller">
             <div class="smaller"> Для нас почему то</div>
@@ -147,7 +146,7 @@
     </section>
 
     <section class="slide">
-            <img src="pictures/a11.png" alt="" class="img">
+        <img src="pictures/a11.png" alt="" class="img">
     </section>
 
     <section class="slide">
@@ -155,7 +154,7 @@
             Почему так? 🤷
         </h2>
     </section>
-    
+
     <section class="slide">
         <h2 class="">
             Почему так? 🤷
@@ -305,19 +304,57 @@
         </div>
     </section>
 
+    <section class="slide">
+        <p>npm i --save-dev https://github.com/GoogleChromeLabs/lighthousebot</p>
+    </section>
+
     <section class="slide ">
-            <pre>
-                <code>after_success:</code>
-                ...
-                <code>- npm run lhouse -- --perf=95 https://your-app-link.com/</code>
+        <h2>.travis.yml</h2>
+        <pre>
+            <code>after_success:</code>        
+            <code>  - npm run lhouse --perf=95 https://your-app-link.com/</code>
+        </pre>
+    </section>
+
+    <section class="slide ">
+        <pre>
+                <code>after_success:</code>        
+                <code>  <span style='background-color:#f9f;'>- npm run lhouse</span> <span style='background-color:paleturquoise;'>--perf=95</span> https://your-app-link.com/</code>
+                <br>
+                <span style='background-color:#f9f;'>запускаем скрипт lighthousebot</span><br>
+                <span style='background-color:paleturquoise;'>пропустить ПР, если перфоманс >=95 </span><br>
             </pre>
     </section>
 
     <section class="slide ">
-            <pre>
-                <code>- npm run lhouse -- https://your-app-link.com/</code>
-                <code>- npm run lhouse -- --perf=93 --seo=100 https://your-app-link.com/</code>
-            </pre>
+        <pre>
+            <code>- npm run lhouse -- https://your-app-link.com/</code>
+            <code>- npm run lhouse -- --perf=93 --seo=100 <br>https://your-app-link.com/</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/bot-1.png" alt="png vs svg">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/bot-2.png" alt="png vs svg">
+        </figure>
+    </section>
+
+    <section class="slide ">
+        <pre style='background-color: rgb(228, 228, 228); padding: 15px; margin-top: 40px; border-radius: 4px;'>
+
+                <div> --perf # performance</div>
+                <div> --pwa  # progressive web app score</div>
+                <div> --a11y # accessibility score</div>
+                <div> --bp   # best practices score</div>
+                <div> --seo  # SEO score</div>
+            
+        </pre>
     </section>
 
     <section class="slide">
@@ -451,7 +488,7 @@
                     <code>&lt;li&gt;</code>
                     <code>  &lt;a href="some-link.html"&gt;</code>
                     <code &lt; span class="mark">  &lt;span class="visually-hidden" &gt; facebook &lt;/span &gt;</code>
-                    <code>      &lt;i class="fa fa-facebook"&gt;</code>
+                    <code>      &lt;i class="fa fa-facebook"&gt; &lt;/i&gt; </code>
                     <code>  &lt;/a&gt;</code>
                     <code>&lt;/li&gt;</code>
                 </pre>
